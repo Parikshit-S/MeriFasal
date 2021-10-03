@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "905028831350",
+    "project_id": "merifasal-7cb9e",
+    "storage_bucket": "merifasal-7cb9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905028831350:android:6f981e8d09af0965f53757",
+        "android_client_info": {
+          "package_name": "com.example.android.merifasal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905028831350-38bt1jhoh2e97v4jjr3ifuqn9tk57v90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWPfKw-NSXNjjRwr6smXtMtSLnDbIhoBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905028831350-38bt1jhoh2e97v4jjr3ifuqn9tk57v90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
