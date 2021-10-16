@@ -38,6 +38,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+
             <EditText
                 android:id="@+id/email"
                 android:layout_width="0dp"
@@ -49,7 +50,7 @@
                 android:drawableLeft="@drawable/ic_baseline_email_white"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="Email"
+                android:hint="Email/ईमेल"
                 android:inputType="textEmailAddress"
                 android:paddingLeft="20dp"
                 android:paddingTop="13dp"
@@ -73,7 +74,7 @@
                 android:drawableLeft="@drawable/ic_baseline_account_circle_24_white"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="Username"
+                android:hint="Username/उपयोगकर्ता नाम"
                 android:inputType="textPersonName"
                 android:paddingLeft="20dp"
                 android:paddingTop="13dp"
@@ -95,7 +96,7 @@
                 android:drawableLeft="@drawable/ic_baseline_security_24"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="Password"
+                android:hint="Password/पासवर्ड"
                 android:inputType="textPassword"
                 android:paddingLeft="20dp"
                 android:paddingTop="13dp"
@@ -117,7 +118,7 @@
                 android:drawableLeft="@drawable/ic_baseline_phone_24_white"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="Number"
+                android:hint="Number/मोबाइल नंबर"
                 android:inputType="number"
                 android:paddingLeft="20dp"
                 android:paddingTop="13dp"
@@ -158,7 +159,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="112dp"
                 android:background="@drawable/input_bg_white"
-                android:text="Register"
+                android:text="Register(रजिस्टर करे)"
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="@+id/number"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -178,6 +179,20 @@
                 app:layout_constraintHorizontal_bias="0.496"
                 app:layout_constraintStart_toStartOf="@+id/btn_register"
                 app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+
+            <TextView
+                android:id="@+id/hindiAlready"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="155dp"
+                android:text="(खाता मौजूद है)"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/alreadyacc" />
 
             <View
                 android:id="@+id/view4"
@@ -208,14 +223,14 @@
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="77dp"
-                android:layout_height="76dp"
+                android:layout_width="149dp"
+                android:layout_height="112dp"
                 app:layout_constraintBottom_toTopOf="@+id/textView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.75"
-                app:srcCompat="@drawable/registeration" />
+                app:srcCompat="@drawable/front_logo_removebg" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

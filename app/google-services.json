@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "905028831350",
+    "firebase_url": "https://merifasal-7cb9e-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "merifasal-7cb9e",
     "storage_bucket": "merifasal-7cb9e.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "905028831350-87gq05b31f81v8qba7g6hroi2a997ar1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.merifasal",
+            "certificate_hash": "27346f15caaa97f79fa4217831b08a5c0fb61619"
+          }
+        },
         {
           "client_id": "905028831350-38bt1jhoh2e97v4jjr3ifuqn9tk57v90.apps.googleusercontent.com",
           "client_type": 3

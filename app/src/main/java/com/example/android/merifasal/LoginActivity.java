@@ -3,12 +3,14 @@ package com.example.android.merifasal;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,8 +32,25 @@ public class LoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         Button loginButton = findViewById(R.id.btn_login);
+        final ImageView googleButton = findViewById(R.id.btn_google);
         final EditText usernameInput = findViewById(R.id.email);
         final EditText passwordInput =  findViewById(R.id.password);
+        final TextView forgotPass = findViewById(R.id.forgotPassword);
+
+        googleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, GoogleSignInActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        forgotPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, ForgotPasswordActivity.class));
+            }
+        });
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,7 +67,15 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
             }
         });
+        TextView HindiNew = findViewById(R.id.hindiNew);
+        HindiNew.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+            }
+        });
     }
+
 
 
     private void login(String email, String password) {
@@ -62,9 +89,9 @@ public class LoginActivity extends AppCompatActivity {
                             Log.d(TAG, "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
 
-                            Toast.makeText(LoginActivity.this, "Authentication Success." + user.getEmail(),
+                            Toast.makeText(LoginActivity.this, "Welcome : "  +  user.getEmail(),
                                     Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(LoginActivity.this, ProfileActivity.class));
+                            startActivity(new Intent(LoginActivity.this, MainActivity.class));
                             finish();
 
                         } else {
@@ -85,7 +112,7 @@ public class LoginActivity extends AppCompatActivity {
 
         FirebaseUser user =  mAuth.getCurrentUser();
         if(user != null) {
-            startActivity(new Intent(LoginActivity.this, ProfileActivity.class));
+            startActivity(new Intent(LoginActivity.this, MainActivity.class));
             finish();
         }
     }

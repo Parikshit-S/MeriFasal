@@ -38,16 +38,28 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="156dp"
+                android:layout_marginEnd="156dp"
+                android:text="(लॉग इन करें)"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="74dp"
-                android:layout_height="61dp"
-                android:layout_marginTop="68dp"
+                android:layout_width="149dp"
+                android:layout_height="112dp"
+                android:layout_marginTop="44dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/user" />
+                app:srcCompat="@drawable/front_logo_removebg" />
 
             <EditText
                 android:id="@+id/email"
@@ -62,7 +74,7 @@
                 android:drawableLeft="@drawable/ic_baseline_email_white"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="Email"
+                android:hint="Email/ईमेल"
                 android:textColorHint="@color/white"
                 android:inputType="textEmailAddress"
                 android:paddingLeft="20dp"
@@ -82,7 +94,7 @@
                 android:layout_marginTop="16dp"
                 android:background="@drawable/input_bg_white"
                 android:ems="10"
-                android:hint="Password"
+                android:hint="Password/पासवर्ड"
                 android:textColorHint="@color/white"
                 android:inputType="textPassword"
                 android:paddingLeft="20dp"
@@ -113,7 +125,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/input_bg_white"
-                android:text="Login"
+                android:text="Login(लॉग इन करें)"
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="@+id/forgotPassword"
                 app:layout_constraintStart_toStartOf="@+id/password"
@@ -133,10 +145,24 @@
                 app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
             <TextView
+                android:id="@+id/hindiNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="165dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="165dp"
+                android:text="(नया खाता बनाएँ)"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/alreadyacc" />
+
+            <TextView
                 android:id="@+id/or"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="45dp"
                 android:text="OR"
                 android:textColor="@color/white"
                 android:textSize="20sp"

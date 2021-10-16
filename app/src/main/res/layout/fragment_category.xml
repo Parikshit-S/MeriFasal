@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Categories.CategoryFragment"
+    android:background="@color/light_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/back" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cagliostro"
+            android:text="Categories"
+            android:textSize="30sp"
+            android:textAllCaps="true"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_home">
+
+            <TextView
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:padding="25dp"
+                android:text="Profile"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:fontFamily="@font/baloo"
+                android:padding="25dp"
+                android:text="(प्रोफ़ाइल)"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#00000000"
+                android:padding="20dp"
+                android:text="Expand/विस्तार"
+                android:textColor="@color/black" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:src="@drawable/profile_logo" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_home">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/about_us_logo" />
+
+            <TextView
+                android:id="@+id/about_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/baloo"
+                android:padding="25dp"
+                android:text="About Us"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="27dp"
+                android:fontFamily="@font/baloo"
+                android:padding="25dp"
+                android:text="(हमारे बारे में)"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_aboutUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="#00000000"
+                android:padding="20dp"
+                android:text="Expand/विस्तार"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_home">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:padding="25dp"
+                android:text="Feedback"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:fontFamily="@font/baloo"
+                android:padding="25dp"
+                android:text="(प्रतिक्रिया)"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#00000000"
+                android:padding="20dp"
+                android:text="Expand/विस्तार"
+                android:textColor="@color/black" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:src="@drawable/feedback_logo" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_home">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/chat_share_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/baloo"
+                android:padding="25dp"
+                android:text="Chat And Share"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="27dp"
+                android:fontFamily="@font/baloo"
+                android:padding="25dp"
+                android:text="(चैट और शेयर)"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="#00000000"
+                android:padding="20dp"
+                android:text="Expand/विस्तार"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

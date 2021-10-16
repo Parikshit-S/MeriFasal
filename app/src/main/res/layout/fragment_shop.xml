@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Shop.ShopFragment"
+    android:background="@color/light_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/bg">
+
+            <ImageView
+                android:id="@+id/btn_userprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/user" />
+
+            <ImageView
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/search" />
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="67dp"
+        android:backgroundTint="@color/black"
+        android:src="@drawable/ic_baseline_shopping_cart_24" />
+
+</RelativeLayout>

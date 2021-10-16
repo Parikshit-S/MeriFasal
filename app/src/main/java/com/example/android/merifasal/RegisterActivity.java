@@ -3,6 +3,7 @@ package com.example.android.merifasal;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class RegisterActivity extends AppCompatActivity {
+    TextView hindiAlready;
     TextView alreadyHaveAccount;
     EditText inputUsername,inputEmail,inputPassword,inputNumber,inputRefferal;
     Button btnRegister;
@@ -36,6 +38,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         alreadyHaveAccount=findViewById(R.id.alreadyacc);
+        hindiAlready=findViewById(R.id.hindiAlready);
         inputUsername=findViewById(R.id.username);
         inputRefferal=findViewById(R.id.refferal);
         inputEmail=findViewById(R.id.email);
@@ -46,6 +49,12 @@ public class RegisterActivity extends AppCompatActivity {
         mAuth=FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
 
+        hindiAlready.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+            }
+        });
 
         alreadyHaveAccount.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,7 +112,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void sendUserToNextActivity() {
-        Intent intent=new Intent(RegisterActivity.this, ProfileActivity.class);
+        Intent intent=new Intent(RegisterActivity.this, MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
