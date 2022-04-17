@@ -167,11 +167,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/number" />
 
             <TextView
-                android:id="@+id/alreadyacc"
+                android:id="@+id/registerAsSeller"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="44dp"
-                android:text="Already have an account!"
+                android:text="Register As A Seller!"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="italic"
@@ -187,12 +187,12 @@
                 android:layout_marginStart="155dp"
                 android:layout_marginTop="1dp"
                 android:layout_marginEnd="155dp"
-                android:text="(खाता मौजूद है)"
+                android:text="(एक विक्रेता के रूप में पंजीकरण करें)"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/alreadyacc" />
+                app:layout_constraintTop_toBottomOf="@+id/registerAsSeller" />
 
             <View
                 android:id="@+id/view4"

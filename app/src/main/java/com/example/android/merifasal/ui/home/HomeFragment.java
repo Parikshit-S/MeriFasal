@@ -6,6 +6,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,6 +26,10 @@ public class HomeFragment extends Fragment {
     RecyclerView recyclerView;
     List<ModelClass> mList;
     CustomAdapter customAdapter;
+    SwipeRefreshLayout refreshLayout;
+
+
+    int number = 0;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -36,6 +41,23 @@ public class HomeFragment extends Fragment {
         customAdapter=new CustomAdapter(mList, getContext());
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        refreshLayout = v.findViewById(R.id.refresh);
+
+        refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                mList.add(new ModelClass(R.drawable.wheat,"Wheat/गेहूं"));
+                mList.add(new ModelClass(R.drawable.makka, "Makka/मक्का"));
+                mList.add(new ModelClass(R.drawable.channa, "Channa/चन्ना"));
+                mList.add(new ModelClass(R.drawable.jav, "Jav/जौ"));
+                mList.add(new ModelClass(R.drawable.bajara, "Baajra/बाजरा"));
+                mList.add(new ModelClass(R.drawable.soya_bean, "SoyaBean/सोया बीन"));
+
+                customAdapter.notifyDataSetChanged();
+                refreshLayout.setRefreshing(false);
+            }
+        });
 
         return v;
     }

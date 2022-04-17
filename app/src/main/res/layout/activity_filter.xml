@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D2D2D2">
+
+
+    <LinearLayout
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/bg">
+
+            <ImageView
+                android:id="@+id/btn_userprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/user" />
+
+            <ImageView
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/search" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/productRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/panel"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <ImageView
+            android:id="@+id/channaIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/potato" />
+
+        <TextView
+            android:id="@+id/channatv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/channaIv"
+            android:text="Potato"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/channatv"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="-67dp"
+            android:layout_toRightOf="@+id/channaIv"
+            android:text="Madhya Pradesh Indore"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/channatv"
+            android:layout_marginLeft="110dp"
+            android:layout_marginBottom="68dp"
+            android:layout_toRightOf="@+id/channatv"
+            android:text="550"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/wheatIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/channaIv"
+            app:srcCompat="@drawable/tomato" />
+
+        <TextView
+            android:id="@+id/wheattv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="113dp"
+            android:layout_toRightOf="@+id/wheatIv"
+            android:text="Tomato"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/price2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/wheattv"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="-67dp"
+            android:layout_toRightOf="@+id/channaIv"
+            android:text="Madhya Pradesh Indore"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/channatv"
+            android:layout_marginLeft="110dp"
+            android:layout_marginBottom="-50dp"
+            android:layout_toRightOf="@+id/channatv"
+            android:text="900"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/MakkaIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/wheatIv"
+            app:srcCompat="@drawable/brinjal" />
+
+        <TextView
+            android:id="@+id/makkatv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="215dp"
+            android:layout_toRightOf="@+id/wheatIv"
+            android:text="Brinjal"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/price3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/makkatv"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="-67dp"
+            android:layout_toRightOf="@+id/channaIv"
+            android:text="Madhya Pradesh Indore"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/channatv"
+            android:layout_marginLeft="110dp"
+            android:textSize="20sp"
+            android:text="800"
+            android:textColor="@color/black"
+            android:layout_marginBottom="-150dp"
+            android:layout_toRightOf="@+id/channatv" />
+
+        <ImageView
+            android:id="@+id/javIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/MakkaIv"
+            app:srcCompat="@drawable/chilli" />
+
+        <TextView
+            android:id="@+id/javtv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="315dp"
+            android:layout_toRightOf="@+id/wheatIv"
+            android:text="Chilli"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/price4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/javtv"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="-67dp"
+            android:layout_toRightOf="@+id/channaIv"
+            android:text="Madhya Pradesh Indore"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/channatv"
+            android:layout_marginLeft="110dp"
+            android:layout_marginBottom="-253dp"
+            android:layout_toRightOf="@+id/channatv"
+            android:text="230"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/baajraIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/javIv"
+            app:srcCompat="@drawable/onion" />
+
+        <TextView
+            android:id="@+id/baajratv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="415dp"
+            android:layout_toRightOf="@+id/wheatIv"
+            android:text="Onion"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/price5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/baajratv"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="-67dp"
+            android:layout_toRightOf="@+id/channaIv"
+            android:text="Madhya Pradesh Indore"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/channatv"
+            android:layout_marginLeft="110dp"
+            android:layout_marginBottom="-357dp"
+            android:layout_toRightOf="@+id/channatv"
+            android:text="160"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/soyabeanIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/baajraIv"
+            app:srcCompat="@drawable/parval" />
+
+        <TextView
+            android:id="@+id/soyabeanTv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="515dp"
+            android:layout_toRightOf="@+id/wheatIv"
+            android:text="Parval"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/price6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/soyabeanTv"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="-61dp"
+            android:layout_toRightOf="@+id/channaIv"
+            android:text="Madhya Pradesh Indore"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/channatv"
+            android:layout_marginLeft="108dp"
+            android:layout_marginBottom="-438dp"
+            android:layout_toRightOf="@+id/channatv"
+            android:text="330"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

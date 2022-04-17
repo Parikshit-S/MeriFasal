@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainSellerActivity"
+    android:background="#d2d2d2">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_blue"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/logoutBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:src="@drawable/ic_logout" />
+
+        <ImageButton
+            android:id="@+id/editProfileBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toStartOf="@+id/logoutBtn"
+            android:background="@null"
+            android:src="@drawable/person_black" />
+
+
+        <ImageButton
+            android:id="@+id/addProductBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toStartOf="@+id/editProfileBtn"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_add_shopping_cart_black" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/shop"
+            app:civ_border_color="@color/black"
+            app:civ_border_overlay="true" />
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/profileIv"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shopNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTv"
+            android:layout_toEndOf="@id/profileIv"
+            android:text="Shop Name"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shopNameTv"
+            android:layout_toEndOf="@id/profileIv"
+            android:text="Email"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/profileIv"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_rect03"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tabProductsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rect04"
+                android:gravity="center"
+                android:text="Products"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tabOrdersTv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Orders"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/productRl"
+        android:layout_below="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/channaIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/channa" />
+
+        <TextView
+            android:id="@+id/channatv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="29dp"
+            android:layout_toRightOf="@+id/channaIv"
+            android:text="Channa"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/channatv"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="-67dp"
+            android:layout_toRightOf="@+id/channaIv"
+            android:text="72 ₹/Kg"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/channatv"
+            android:layout_marginLeft="125dp"
+            android:layout_marginBottom="50dp"
+            android:layout_toRightOf="@+id/channatv"
+            app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+
+        <ImageView
+            android:id="@+id/wheatIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/channaIv"
+            app:srcCompat="@drawable/wheat" />
+
+        <TextView
+            android:id="@+id/wheattv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="29dp"
+            android:layout_toRightOf="@+id/wheatIv"
+            android:text="wheat"
+            android:layout_marginTop="113dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/price2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/wheattv"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="-67dp"
+            android:layout_toRightOf="@+id/channaIv"
+            android:text="210 ₹/Kg"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/channatv"
+            android:layout_marginLeft="125dp"
+            android:layout_marginBottom="-50dp"
+            android:layout_toRightOf="@+id/channatv"
+            app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+        <ImageView
+            android:id="@+id/MakkaIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/wheatIv"
+            app:srcCompat="@drawable/makka" />
+
+        <TextView
+            android:id="@+id/makkatv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="29dp"
+            android:layout_toRightOf="@+id/wheatIv"
+            android:text="Makka"
+            android:layout_marginTop="215dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/price3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/makkatv"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="-67dp"
+            android:layout_toRightOf="@+id/channaIv"
+            android:text="25 ₹/Kg"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/channatv"
+            android:layout_marginLeft="122dp"
+            android:layout_marginBottom="-150dp"
+            android:layout_toRightOf="@+id/channatv"
+            app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+        <ImageView
+            android:id="@+id/javIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/MakkaIv"
+            app:srcCompat="@drawable/jav" />
+
+        <TextView
+            android:id="@+id/javtv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="29dp"
+            android:layout_toRightOf="@+id/wheatIv"
+            android:text="Jav"
+            android:layout_marginTop="315dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/price4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/javtv"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="-67dp"
+            android:layout_toRightOf="@+id/channaIv"
+            android:text="95 ₹/Kg"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/channatv"
+            android:layout_marginLeft="122dp"
+            android:layout_marginBottom="-253dp"
+            android:layout_toRightOf="@+id/channatv"
+            app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+
+        <ImageView
+            android:id="@+id/baajraIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/javIv"
+            app:srcCompat="@drawable/bajara" />
+
+        <TextView
+            android:id="@+id/baajratv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="29dp"
+            android:layout_toRightOf="@+id/wheatIv"
+            android:text="Baajra"
+            android:layout_marginTop="415dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/price5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/baajratv"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="-67dp"
+            android:layout_toRightOf="@+id/channaIv"
+            android:text="25 ₹/Kg"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/channatv"
+            android:layout_marginLeft="122dp"
+            android:layout_marginBottom="-357dp"
+            android:layout_toRightOf="@+id/channatv"
+            app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+
+        <ImageView
+            android:id="@+id/soyabeanIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/baajraIv"
+            app:srcCompat="@drawable/soya_bean" />
+
+        <TextView
+            android:id="@+id/soyabeanTv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="29dp"
+            android:layout_toRightOf="@+id/wheatIv"
+            android:text="Soyabean"
+            android:layout_marginTop="515dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/price6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/soyabeanTv"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="-61dp"
+            android:layout_toRightOf="@+id/channaIv"
+            android:text="60 ₹/Kg"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/channatv"
+            android:layout_marginLeft="123dp"
+            android:layout_marginBottom="-438dp"
+            android:layout_toRightOf="@+id/channatv"
+            app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/orderRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarRl">
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -139,6 +139,7 @@
             android:background="@drawable/bg_home">
 
             <TextView
+                android:id="@+id/feedback"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/baloo"
@@ -158,6 +159,7 @@
                 android:textSize="20sp" />
 
             <Button
+                android:id="@+id/btn_feedback"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
@@ -189,6 +191,7 @@
                 android:src="@drawable/chat_share_logo" />
 
             <TextView
+                android:id="@+id/chat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -210,6 +213,7 @@
                 android:textSize="20sp" />
 
             <Button
+                android:id="@+id/btn_chat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"

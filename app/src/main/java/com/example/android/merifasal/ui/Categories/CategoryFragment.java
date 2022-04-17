@@ -32,8 +32,13 @@ public class CategoryFragment extends Fragment {
         final ImageView goBack = v.findViewById(R.id.back);
         final Button ProfileButton = v.findViewById(R.id.btn_profile);
         final Button AboutUsButton = v.findViewById(R.id.btn_aboutUs);
+        final Button FeedbackButton = v.findViewById(R.id.btn_feedback);
+        final Button ChatButton = v.findViewById(R.id.btn_chat);
         final TextView profile = v.findViewById(R.id.profile);
         final TextView aboutUs = v.findViewById(R.id.about_us);
+        final TextView feedback = v.findViewById(R.id.feedback);
+        final TextView chat = v.findViewById(R.id.chat);
+
 
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,6 +77,38 @@ public class CategoryFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        FeedbackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), FeedbackActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        feedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), FeedbackActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ChatActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ChatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ChatActivity.class);
                 startActivity(intent);
             }
         });

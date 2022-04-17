@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.example.android.merifasal.LoginActivity;
 import com.example.android.merifasal.R;
+import com.example.android.merifasal.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -25,9 +26,17 @@ public class ProfileActivity extends AppCompatActivity {
         FirebaseUser user = mAuth.getCurrentUser();
 
         String email = user.getEmail();
+        String username = user.getDisplayName();
+        String number = user.getPhoneNumber();
 
         TextView welcomeText =  findViewById(R.id.welcomeText);
-        welcomeText.setText("Welcome : " + email);
+        welcomeText.setText("Email : " + email);
+
+        TextView UserName = findViewById(R.id.userName);
+        UserName.setText("UserName : " + username);
+
+        TextView Phone = findViewById(R.id.pNumber);
+        Phone.setText("Number : " + number);
 
 
 

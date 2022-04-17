@@ -1,7 +1,9 @@
 package com.example.android.merifasal;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -21,6 +23,8 @@ public class FrontActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_front);
+
+        getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.front_color));
 
         txtAnimation = AnimationUtils.loadAnimation(FrontActivity.this,R.anim.fall_down);
         layoutAnimation = AnimationUtils.loadAnimation(FrontActivity.this,R.anim.bottom_to_top);
@@ -55,6 +59,6 @@ public class FrontActivity extends AppCompatActivity {
                 Intent intent = new Intent(FrontActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
-        },6000);
+        },4000);
     }
 }

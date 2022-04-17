@@ -5,10 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
     tools:context=".ui.Shop.ShopFragment"
     android:background="@color/light_grey">
 
+
     <LinearLayout
+        android:id="@+id/panel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -35,10 +38,12 @@
                 android:layout_centerVertical="true"
                 android:padding="15dp"
                 android:src="@drawable/search" />
-            
+
+
         </RelativeLayout>
-        
+
     </LinearLayout>
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/cart"
@@ -54,5 +59,14 @@
         android:layout_marginBottom="67dp"
         android:backgroundTint="@color/black"
         android:src="@drawable/ic_baseline_shopping_cart_24" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/panel" />
+
+
 
 </RelativeLayout>

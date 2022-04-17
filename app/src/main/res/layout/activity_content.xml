@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,12 +8,70 @@
     tools:context=".content.ContentActivity"
     android:background="#d2d2d2">
 
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:text="Hello 1"
-    android:gravity="center"
-    android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/gpsBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nearByMandiTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gps_black" />
+
+    <TextView
+        android:id="@+id/nearByMandiTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="32dp"
+        android:layout_toStartOf="@+id/gpsBtn"
+        android:text="Nearby Mandi And Rates"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/back"
+        app:layout_constraintEnd_toStartOf="@+id/nearByMandiTxt"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instEng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on the Gps Button to get the rates of nearby mandi around your city"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nearByMandiTxt"
+        app:layout_constraintVertical_bias="0.309" />
+
+
+
+    <TextView
+        android:id="@+id/instHindi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="अपने शहर के आसपास की मंडी के रेट जानने के लिए जीपीएस बटन पर क्लिक करें"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nearByMandiTxt"
+        app:layout_constraintVertical_bias="0.451" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

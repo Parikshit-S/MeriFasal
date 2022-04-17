@@ -5,40 +5,61 @@
       <map>
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/drawable/background_box.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/drawable/bg.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/drawable/bg_blue.xml" value="0.182" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/drawable/bg_card.xml" value="0.23981481481481481" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/drawable/bg_home.xml" value="0.22870370370370371" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.18425925925925926" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/drawable/ic_baseline_favorite.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/drawable/ic_baseline_remove_circle_outline_24.xml" value="0.18425925925925926" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/drawable/ic_gps.xml" value="0.1645" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/drawable/input_bg.xml" value="0.2324074074074074" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/drawable/input_bg_white.xml" value="0.2537037037037037" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/drawable/item_selector.xml" value="0.24444444444444444" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/drawable/shape_rect03.xml" value="0.1" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/drawable/shape_rect04.xml" value="0.1" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_about_us.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_add_product.xml" value="0.2" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_cart.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_content.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_chat.xml" value="0.2" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_content.xml" value="0.264" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_content2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_content3.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_content4.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_content5.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_content6.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_feedback.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_filter.xml" value="0.264" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_forgotpassword.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_front.xml" value="0.1" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_google_sign_in.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_login_seller.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_main.xml" value="0.152" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_main_seller.xml" value="0.264" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_name1.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_name2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_name3.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_name4.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_profile.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_register_seller.xml" value="0.264" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/activity_selection.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/appbarlayout.xml" value="0.11018518518518519" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/bot_msg_rv_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/fragment_about_us.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/fragment_category.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/fragment_home.xml" value="0.176" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
-        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/fragment_shop.xml" value="0.264" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/fragment_shop.xml" value="0.2" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/goiitem.xml" value="0.152" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/item_design.xml" value="0.152" />
-        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/layout_file.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/layout_file.xml" value="0.264" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/singlerow.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/layout/user_msg_rv_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/menu/filtermenu.xml" value="0.1" />
+        <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/menu/mainmenu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parik/MeriFasal/app/src/main/res/menu/navigation_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
